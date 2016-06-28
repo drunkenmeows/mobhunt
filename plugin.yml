@@ -1,0 +1,33 @@
+name: MobHunt
+main: me.drunkenmeows.mobhunt.MobHunt
+version: '5.00'
+author: drunkenmeows
+website: http://dev.bukkit.org/server-mods/mobhunt
+softdepend: [Multi-verse, WorldEdit, Vault]
+description: >
+             Nightly MobHunting game, for players to score points and win prizes
+commands:
+   mobhunt:
+      description: Mobhunt command, for controlling MobHunt.
+      permissions: mobhunt.player
+      aliases: mh
+   joinhunt:
+      description: Join a hunt
+      permission: mobhunt.player
+   leavehunt:
+      description: Leave a hunt
+      permission: mobhunt.player
+   huntstatus:
+      description: Display the current status of the hunt.
+      permission: mobhunt.player
+   huntinfo:
+      description: Displays all the information for the next hunt.
+      permission: mobhunt.player
+   huntspawn:
+      description: teleport a player into the huntarea
+      permission: mobhunt.player  
+      
+Permissions:
+    mobhunt.admin:
+        description: Are they an admin.
+        default: OP

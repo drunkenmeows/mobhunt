@@ -1,0 +1,125 @@
+#an Arena for Arena games
+Arena:
+  # % of fGamePlayers required to start
+  AutoStartLimit: 70
+  #queue player inside arena or teleport play when ready
+  QueueInsideArena: false
+  #minimum fGamePlayers
+  minPlayers: 1
+  #minimum fGamePlayers playing
+  endLimit: 0
+  #Delay game start by 20 seconds
+  StartupTime: 20
+  #Warmup for 20 seconds
+  WarmupTime: 20
+  #timelimit of ffa, tdm and ctf games
+  TimeLimit: 20
+  #kill limit, ffa & tdm game end limits
+  KillLimit: 50
+  # % of vote required to pass
+  VoteLimit: 60
+  #disable commaand usage
+  DisableCommands: true
+  #allowed commands
+  CommandWhiteList:
+    - 'kit'
+  #fCost per game
+  Cost: 100
+  #tally all player money and add it to a winning pot
+  TallyPot: true
+  #if PotReward: false - give player $200 for winning
+  Pot: 200
+  #reward for kill
+  KillReward: 10
+  # $10 penalty given to fGamePlayers for dying. 0 = disabled
+  DeathPenalty: 10
+  #hide player name tags for opposing fGamePlayers
+  HidePlayerNames: true
+  #area where the game is X max & min Z max & min
+  Area:
+    xmax: 0
+    zmax: -0
+    xmin: 0
+    zmin: -0
+  #ffa, tdm, ctf, hgs, skywar
+  Gametype: ffa
+  DenyBlockBreak: false
+  DenyBlockPlace: false
+  #chest inside arena
+  useChests: true
+  #randomise chests; items are randomised for chest.
+  randomChests: true
+  blockWhitelist:
+    place:
+    - STONE
+    - GRASS
+    - DIRT
+    - LOG 
+    - LOG_2
+    - LEAVES 
+    - LEAVES_2
+    break:
+    - STONE
+    - GRASS
+    - DIRT
+    - LOG 
+    - LOG_2
+    - LEAVES 
+    - LEAVES_2
+  #Random chest items
+  Chest:
+    Items:
+    - STONE;0;3;100
+    - STONE_SWORD;0;1;50
+    - STONE_SPADE;0;1;50
+    - COOKED_BEEF;0;1;75
+    - COOKED_BEEF;0;1;75
+    - COOKED_BEEF;0;1;75
+    - COOKED_BEEF;0;1;75
+    - BREAD;0;1;75
+    - BREAD;0;1;75
+    - BREAD;0;1;75
+    - IRON_BOOTS;0;1;50
+    - IRON_CHESTPLATE;0;1;50
+    - IRON_HELMET;0;1;50
+  #teams 
+  #list of spawns
+  Spawns:
+  - 434,114,-556
+  - 432,113,-553
+  - 411,111,-568
+  - 411,111,-548
+  #Item -> 'id;data;amount;%chance' 
+  #Item with enchant -> 'id;data;amount;enchantment;level;%chance'
+  #Money -> '$;amount-amount;%chance'
+  Rewards:
+    First:
+      Items:
+      - GOLD_BLOCK;0;3;100
+      - GOLD_BLOCK;0;1;25
+      - GOLD_BLOCK;0;1;25
+      - DIAMOND;0;1;25
+      - $;100-300;25
+      - DIAMOND_HELMET;180;1;Respiration;2;35
+      - EXP_BOTTLE;0;10;25
+    Second:
+      Items:
+      - GOLD_BLOCK;0;1;100
+      - GOLD_BLOCK;0;2;50
+      - DIAMOND;0;1;10
+      - $;50-150;25
+      - EXP_BOTTLE;0;5;25
+    Third:
+      Items:
+      - GOLD_INGOT;0;3;100
+      - GOLD_INGOT;0;2;50
+      - $;10-30;25
+      - EXP_BOTTLE;0;1;25
+    RunnersUp:
+      Items:
+      - COOKED_BEEF;0;1;100
+      - BREAD;0;2;100
+      - DIAMOND_HOE;0;1;5
+      - $;5-15;25
+        
+        

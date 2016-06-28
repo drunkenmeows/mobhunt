@@ -1,0 +1,101 @@
+Version: 5.00
+
+#list of worlds used by MobHunt
+Worlds:
+  - world
+  - pve
+
+#worlds with hunts
+Hunts:
+  world:
+    - global
+    - test
+  pve:
+    - desert
+#Active worlds and arenas
+#Arenas:
+#  PVE:
+#  - castle
+  
+Messages:
+  Prefix: '&e[&cMobHunt&e] '
+  PlayerLeftMsg: '&aPlayer&f %s &aleft the hunt!'
+  PlayerJoinMsg: '&aPlayer&f %s &ajoined the hunt!'
+  PlayersRequired: '&e[&f%i&e]&a hunters required for next hunt!'
+  PlayerJoinFail: '&cYou already joined a game!'
+  LeaveHunt: '&cYou have forfeited the hunt!'
+  LeaveHuntFail: '&cYou are not apart of the hunt!'
+  JoinPaid: '&aYou paid &e[&f$%i&e]&a to join the next hunt'
+  LeavePaid: '&aYou recieved &e[&f$%i&e]&a back.'
+  NoFunds: '&cYou don''t have enough money!'
+  ToLateToJoin: '&cHunt has already commenced!'
+  DeathMsg: '&cYou died! You lose &e[&f%i&e]&c points'
+  GamemodeMsg: '&cYou cannot hunt in Creative mode!'
+  OutsideHunt: '&cYou are outside the huntarea!'
+  Huntspawn: '&aType /huntspawn to join the hunt area.'
+  SpawnFail: '&aYou are already inside the hunt area!'
+  EnchantmentFail: '&cNo points - Enchantment score chance: &e[&f%i&e]'
+  BowFail: '&cNo points - Bow score chance: &e[&f%i&e]'
+  HuntPositions: '&f[&a%s&f][&e%s&f][&c%s&f]'
+  HuntPoints: '&f----[&a%i&f]--------[&e%i&f]--------[&c%i&f]----'
+  HuntKill: '&aYou killed a &e[&f%s&e]&a for &e[&f%i&e]&a points.'
+  HuntPlayerPos: '&aYou are &e[&f%i&a/&c%i&e]&a with &e[&f%i&e]&a points.'
+  DenySpawnerMobs: '&cMob spawned from spawner!'
+  OutsideOnlyMobs: '&cMob didn''t spawn outside!'
+  NotInHunt: '&cMob &e[&f%s&e]&c not included in hunt'
+  FirstMsg: '&aFirst place is &f%s&a, with &e[&f%i&e] &apoints.'
+  SecondMsg: '&aSecond place is &f%s&a, with &e[&f%i&e] &apoints.'
+  ThirdMsg: '&aThird place is &f%s&a, with &e[&f%i&e] &apoints.'
+  FourthMsg: '&aYou are a runner-up with &e[&f%i&e]&a points.'
+  FirstFailMsg: '&f%s &adid not make 1st place threshold &e[&f%i&e]'
+  SecondFailMsg: '&f%s &adid not make 2nd place threshold &e[&f%i&e]'
+  ThirdFailMsg: '&f%s &adid not make 3rd place threshold &e[&f%i&e]'
+  FirstRewards: '&aYou received &e[&fFirst&e]&a place prizes.'
+  SecondRewards: '&aYou received &e[&fSecond&e]&a place prizes.'
+  ThirdRewards: '&aYou received &e[&fThird&e]&a place prizes.'
+  FourthRewards: '&aYou received &e[&fRunnerup&e]&a prizes.'
+  FirstPot: '&aYou received &e[&f$%i&e][&fFirst&e]&a place pot.'
+  SecondPot: '&aYou received &e[&f$%i&e][&fSecond&e]&a place pot.'
+  ThirdPot: '&aYou received &e[&f$%i&e][&fThird&e]&a place pot.'
+  FourthPot: '&aYou received &e[&f$%i&e][&fRunnersUp&e]&a pot'
+  NoRewards: '&cNo rewards! Score &e[&f%i&e]&c below threshold &e[&f%i&e]'
+  NoRunnerupRewards: '&cNo runnerup rewards!'
+  MoneyRewards: '&aYou have recieve a &e[&f$%i&e]&a money reward'
+  PayHunt: '&aPayHunt: &e[&f%s&e]&a Cost: &e[&f$%i&e]&a'
+  Huntinfo:
+    Header: '&f~~~~~~~~~~~&e[&fHunt Settings&e]&f~~~~~~~~~~~'
+    Mobs: '&aMobs: &e[&f%s&e]&a'
+    Thresholds: '&aThresholds: &e[&f1st:%i&e][&f2nd:%i&e][&f3rd:%i&e][&fR:%i&e]'
+    PVP: '&aPVP: &e[&f%s&e]&a - Death Penalty: &e[&f%i&e]'
+    RunnersupRewards: '&aReward Runners-up: &e[&f%s&e]'
+    BowModifier: '&aBow: &e[&f%i% Score Modifier&e]'
+    EnchantmentsModifier: '&aEnchants: &e[&f%i% Score Modifier&e]'
+    HuntTimes: '&aStart: &e[&f%i&e]&aticks - Finish: &e[&f%i&e]&aticks'
+    HuntLength: '&aHunt Length: &e[&f%i&e]&aminutes and &e[&f%i&e]&aseconds.'
+    Footer: '&f~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+  NotEnoughPlayers: '&c****NOT ENOUGH PLAYERS****'
+  NoGame: '&aThat hunt/game doesn''t exist!'
+  CanceledHunt: '&aThe hunt has started!'
+  HuntActive: '&aHunt is active!'
+  HuntWaiting: '&aWaiting to commence the hunt!'
+  HuntDisabled: '&cNo hunt tonight!'
+  PlayersWaiting: '&e[&f%i&e]&a fGamePlayers are waiting.'
+  JoinMsg: '&aType /joinhunt now to join.'
+  NextHunt: '&aNext hunt in &e[&f%i&e]&aminutes and &e[&f%i&e]&aseconds.'
+  TooFewPlayers: '&cNo mob hunt tonight, too few fGamePlayers...'
+  StartMsg: '&a*****START HUNTING*****'
+  EndMsg: '&c*****THE HUNT IS OVER*****'
+  StartTimerMsg: '&aHUNT STARTING IN...&f %i'
+  EndTimerMsg: '&cHUNT ENDING IN...&f %i'
+  SkipdayMsg: '&aNext hunt in &e[&f%i&e]&adays'
+  ReloadMsg: '&aConfig reloaded!'
+  HuntStatus: '&f~~~~~~~&e[&fHunt Status - %s&e]&f~~~~~~~'
+  Commands:
+    Title: '&e========[&cMobhunt %s&e]========'
+    Join: '&a - Join a hunt.'
+    Leave: '&a - leave a hunt.'
+    Spawn: '&a - Teleport to the hunter area.'
+    Info: '&a - Display current hunt information.'
+    Status: '&a - Display status of the hunt.'
+    Reload: '&a - Reload mobhunt the config.'
+    Next: '&a - Select a new hunt.'

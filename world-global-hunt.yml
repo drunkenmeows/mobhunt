@@ -1,0 +1,150 @@
+#hunt setttings per world - change the world: key to match your world
+Hunt:
+  #ticks 0=6am, 6000=12pm, 12000=6pm, 18000=12am
+  StartTime:  14000
+  EndTime:    24000
+  #Delay for hunt announcer in seconds
+  AnnounceDelay: 240
+  #minimum hunters required to initated a hunt.
+  MinimumHunters: 3
+  #Cost to join hunt - how much it costs to play
+  Cost: 100
+  #% Chance a hunt will fCost money eg 15 = 15%.
+  PayChance: 15
+  #Keep Items on player dying
+  KeepItemsOnDeath: true
+  #Allow fGamePlayers to join active hunts.
+  AllowLateHunters: true
+  #game points for each mob
+  Points:
+    Blaze:        25
+    Cavespider:   10
+    Creeper:      50
+    Enderdragon:  10000
+    Enderman:     70
+    Ghast:        75
+    Giant:        10000
+    Magmacube:    10
+    Pigzombie:    10
+    Silverfish:   5
+    Skeleton:     20
+    Slime:        5
+    Spider:       10
+    Witch:        100
+    WitherBoss:   1000
+    Wither:       50
+    Zombie:       10
+    Player:       50
+  #penalty given to fGamePlayers for dying. 0 = disabled
+  DeathPenalty: 150
+  #Skip days between hunts 1 skip one day, 2 skip 2 days
+  SkipDays: 0
+  #if SkipDays: 0, This is a % Chance for hunt to skip a day.
+  SkipDayChance: 0
+  #% Score modifier range for enchantments
+  #%between 30 and 70%, if score modifier is 40, player scores 40% of points each kill
+  EnchantmentModifierRange: [30,70]
+  #% Score modifier range for bows
+  #%between 40 and 80%, if score modifier is 50, player scores 50% of points each kill
+  BowModifierRange: [40,80]
+  #Allow PVP chance %
+  PvpChance: 10
+  #random hunts from the hunt list below, false = all mobs all the time.
+  RandomHunts: true
+  #Auto teleport hunters to hunt area when useArea: true
+  AutoTeleport: true
+  #Spawn fGamePlayers in a random location
+  RandomSpawn: false
+  #Deny block breaking for Area hunts
+  DenyBlockBreak: true
+  #Deny block placing for Area hunts
+  DenyBlockPlace: true
+  #Area spawn point if RandomSpawn is false
+  AreaSpawn:
+  - 0
+  - 0
+  - 0
+  #use a specific area for hunts,
+  #if true, Spawner mobs and Cave/Grinder mobs will NOT be Excluded from hunts.
+  useArea: false
+  #area where hunt will take place
+  #square/rectangle defined by two opposite corners
+  # o-----
+  # |    |
+  # -----o
+  Area:
+    xmax: 0
+    zmax: 0
+    xmin: -0
+    zmin: -0
+  #Hunts 
+  #Supported Hunts: All Blaze CaveSpider Creeper EnderDragon Enderman Ghast Giant Magmacube PigZombie
+  #Silverfish Skeleton Slime Spider Zombie Witch WitherBoss WitherSkeleton 
+  #Pay - pay to play, win a cash prize. Area - Hunt is an area hunt (even if useArea is false).
+  #Pvp - force pvp true
+  Hunts:
+    - All:
+      - mobs: [All]
+      - thresholds: [1000, 750, 500, 250]
+    - 2:
+      - mobs: [Creeper, Slime, Zombie]
+      - thresholds: [500, 400, 300, 200]
+  #Everyone gets a reward?
+  RewardRunnersUp: true
+  #remove spawner mobs when reloading/rebooting
+  RemoveSpawnerMobs: true
+  #Deny spawner mobs
+  DenySpawnerMobs: true
+   #outside spawnwed mobs only - set false for nethers / underground hunt areas
+  OutsideMobsOnly: true
+  #rewards
+  Rewards:
+    First:
+      #Item -> 'id;data;amount;%chance' 
+      #Item with enchant -> 'id;data;amount;enchantment;level;%chance'
+      #Money -> '$;amount-amount;%chance'
+      Items:
+        #3 gold block
+        - GOLD_BLOCK;0;3;100
+        #1 gold block
+        - GOLD_BLOCK;0;1;25
+        #4th gold block 25% chance
+        - GOLD_BLOCK;0;1;25
+        #diamond 25%
+        - DIAMOND;0;1;25
+        #money between 200 and 500 25% chance
+        - $;100-300;25
+        # 5 Exp bottles 25% chance!
+        - EXP_BOTTLE;0;5;50
+    Second:
+      Items:
+         #1 gold block
+        - GOLD_BLOCK;0;1;100
+         #2 more gold block 50%
+        - GOLD_BLOCK;0;2;50
+         #diamond 10%
+        - DIAMOND;0;1;10
+        #money between 200 and 500 25% chance
+        - $;50-150;25
+        # 5 Exp bottles 25% chance!
+        - EXP_BOTTLE;0;5;25
+    Third:
+      Items:
+         #3 gold ingot 50%
+        - GOLD_INGOT;0;3;100
+         #2 more gold ingot 50%
+        - GOLD_INGOT;0;2;50
+        #money between 200 and 500 25% chance
+        - $;10-30;25
+        # 1 Exp bottles 25% chance!
+        - EXP_BOTTLE;0;1;25
+    RunnersUp:
+      Items:
+         #steak
+        - COOKED_BEEF;0;1;100
+         #2 bread
+        - BREAD;0;2;100
+         #Diamond hoe 5% ;3
+        - DIAMOND_HOE;0;1;5
+        #money between 200 and 500 25% chance
+        - $;5-15;25
